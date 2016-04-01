@@ -1,0 +1,21 @@
+{
+  "mongodb": {
+    "uri": "mongodb://localhost/web-app-default"
+  },
+  "jwt": {
+    "secret": "SECRET"
+  },
+  "api": {
+    "port": 3000
+  },
+  "aws": {
+    "s3": {
+      "region": "us-east-1",
+      "s3ForcePathStyle": true,
+      "accessKeyId": "ACCESS_KEY_ID",
+      "secretAccessKey": "ACCESS_KEY_SECRET",
+      "bucket": "BUCKET_NAME",
+      "endpoint": "s3.amazonaws.com"
+    }
+  }
+}
