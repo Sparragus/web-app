@@ -3,14 +3,21 @@ import compose from 'koa-compose'
 
 import auth from '../middleware/auth'
 
+// Routes
+import signup from './users/signup'
+
 export default function () {
   const publ = new Router()
   const priv = new Router()
 
   publ.get('*', async function (ctx, next) {
     ctx.body = 'Hello, World!'
-    await next()
   })
+
+  // Public routes
+
+  // User routes
+  publ.post('/signup', signup)
 
   return compose([
     publ.routes(),

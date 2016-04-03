@@ -5,9 +5,10 @@ import config from 'config'
 // Import database
 import mongoose from 'mongoose'
 
-// Import Koa and tools
+// Import Koa and middleware
 import Koa from 'koa'
 import logger from 'koa-logger'
+import bodyParser from 'koa-bodyparser'
 
 // Import app related
 import api from './api'
@@ -30,6 +31,7 @@ if (process.env.NODE_ENV === 'development') {
   app.use(logger())
 }
 
+app.use(bodyParser())
 app.use(api())
 
 app.listen(3000)
