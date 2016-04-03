@@ -43,7 +43,7 @@
     "bcryptjs": "^2.3.0",
     "config": "^1.19.0",
     "koa": "^2.0.0",
-    "koa-bodyparser": "^2.0.1",
+    "koa-bodyparser": "^3.0.0",
     "koa-compose": "^3.1.0",
     "koa-jwt": "^1.1.2",
     "koa-logger": "^2.0.0",
