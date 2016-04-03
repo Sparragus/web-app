@@ -5,6 +5,7 @@ import auth from '../middleware/auth'
 
 // Routes
 import signup from './users/signup'
+import login from './users/login'
 
 export default function () {
   const publ = new Router()
@@ -18,6 +19,7 @@ export default function () {
 
   // User routes
   publ.post('/signup', signup)
+  publ.post('/login', login)
 
   return compose([
     publ.routes(),
